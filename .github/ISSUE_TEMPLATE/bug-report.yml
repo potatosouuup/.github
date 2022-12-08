@@ -9,7 +9,7 @@ body:
     id: environment
     attributes:
       label: Environment
-      # description:
+      description: ❗️REQUIRED
       options:
         - label: PRD
         - label: INT
@@ -20,7 +20,7 @@ body:
     id: project-type
     attributes:
       label: Project Type
-      # description:
+      description: ❗️REQUIRED
       options:
         - label: ICH - Website
         - label: ICH - Admin
@@ -34,9 +34,6 @@ body:
   - type: textarea
     attributes:
       label: Desktop
-      # description: |
-      #   examples:
-      #     - **OS**: Ubuntu 20.04
       value: |
         - OS: [e.g. iOS]
         - Browser [e.g. chrome, safari]
@@ -85,5 +82,26 @@ body:
         2. Click on '....'
         3. Scroll down to '....'
         4. See error
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Screenshot or ScreenRecording
+      description: A clear & very short media (photo or video) of the bug has to be provided here for clear understanding.
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here.
     validations:
       required: false
