@@ -39,7 +39,7 @@ body:
         - Browser [e.g. chrome, safari]
         - Version [e.g. 22]
     validations:
-      required: false
+      required: true
 
   - type: textarea
     attributes:
