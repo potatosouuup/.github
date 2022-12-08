@@ -1,21 +1,44 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
-# assignees:
-#   - bbonkr
+name: 🐞 Bug report
+description: Create a report to help us improve
+title: ""
+labels: ["bug"]
+assignees: ""
+
 body:
   - type: checkboxes
-    id: operating-systems
+    id: environment
     attributes:
-      label: Which operating systems have you used?
-      description: You may select more than one.
+      label: Environment
+      # description: 
       options:
-        - label: macOS
-        - label: Windows
-        - label: Linux
+        - label: PRD
+        - label: INT
     validations:
       required: true
+
+  - type: checkboxes
+    id: project-type
+    attributes:
+      label: Project Type
+      # description: 
+      options:
+        - label: ICH - Website
+        - label: ICH - Admin
+        - label: ICH - Android
+        - label: ICH - iOS
+        - label: SaaS Client - Website
+        - label: SaaS Client - Admin    
+    validations:
+      required: true
+
+  - type: input
+    id: prevalence
+    attributes:
+      label: OS
+      description: "How often do you or others encounter this bug?"
+      placeholder: "[e.g. iOS]"
+    validations:
+      required: false
       
   - type: markdown
     attributes:
