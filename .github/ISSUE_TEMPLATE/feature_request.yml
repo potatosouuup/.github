@@ -28,6 +28,8 @@ body:
       value: |
         ---
         ## 🟢 Test Request
+        > If you want to ask QA to test, Please check environment.
+        Otherwise, you can ignore the environment field.
 
   - type: checkboxes
     id: environment
