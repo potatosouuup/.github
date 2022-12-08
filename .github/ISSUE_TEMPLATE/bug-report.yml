@@ -5,15 +5,17 @@ labels: ["bug", "triage"]
 # assignees:
 #   - bbonkr
 body:
- - type: checkboxes
-  id: operating-systems
-  attributes:
-    label: Which operating systems have you used?
-    description: You may select more than one.
-    options:
-      - label: macOS
-      - label: Windows
-      - label: Linux
+  - type: checkboxes
+    id: operating-systems
+    attributes:
+      label: Which operating systems have you used?
+      description: You may select more than one.
+      options:
+        - label: macOS
+        - label: Windows
+        - label: Linux
+    validations:
+      required: true
       
   - type: markdown
     attributes:
