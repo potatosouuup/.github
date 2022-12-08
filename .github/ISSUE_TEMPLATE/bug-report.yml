@@ -39,7 +39,7 @@ body:
         - Browser [e.g. chrome, safari]
         - Version [e.g. 22]
     validations:
-      required: true
+      required: false
 
   - type: textarea
     attributes:
@@ -57,14 +57,8 @@ body:
     attributes:
       label: Figma - Design Link
       description: "Add figma file link here for better understanding for the engineers, if applicable."
-      # placeholder: "[e.g. iOS]"
     validations:
       required: false
-
-  # - type: markdown
-  #   attributes:
-  #     value: |
-  #       Thanks for taking the time to fill out this bug report!
 
   - type: textarea
     id: description
@@ -105,3 +99,8 @@ body:
       description: Add any other context about the problem here.
     validations:
       required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        Please check if Assignees is specified.
