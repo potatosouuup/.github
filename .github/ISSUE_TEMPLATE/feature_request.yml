@@ -5,11 +5,6 @@ labels: ["enhancement"]
 # assignees: ""
 
 body:
-  - type: markdown
-    attributes:
-      value: |
-        If you want to ask QA to test, 
-        set the label to `help wanted`, `test request`.
 
   - type: dropdown
     id: priority
@@ -101,4 +96,5 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please check if Assignees is specified.
+        1. Please check if Assignees is specified.
+        2. If you want to ask QA to test, set the label to `help wanted`, `test request`.
