@@ -9,20 +9,20 @@ body:
     id: environment
     attributes:
       label: Environment
+      required: true
       description: ❗️REQUIRED
       options:
         - label: PRD
-          required: true
         - label: INT
 
   - type: checkboxes
     id: project-type
     attributes:
       label: Project Type
+      required: true
       description: ❗️REQUIRED
       options:
         - label: ICH - Website
-          required: true
         - label: ICH - Admin
         - label: ICH - Android
         - label: ICH - iOS
