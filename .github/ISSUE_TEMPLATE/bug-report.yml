@@ -9,7 +9,7 @@ body:
     id: environment
     attributes:
       label: Environment
-      required: true
+        required: true
       description: ❗️REQUIRED
       options:
         - label: PRD
@@ -19,7 +19,7 @@ body:
     id: project-type
     attributes:
       label: Project Type
-      required: true
+        required: true
       description: ❗️REQUIRED
       options:
         - label: ICH - Website
