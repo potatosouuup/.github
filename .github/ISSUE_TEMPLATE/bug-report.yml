@@ -12,7 +12,7 @@ body:
       description: ❗️REQUIRED
       options:
         - label: PRD
-        required: true
+          required: true
         - label: INT
 
   - type: checkboxes
@@ -22,7 +22,7 @@ body:
       description: ❗️REQUIRED
       options:
         - label: ICH - Website
-        required: true
+          required: true
         - label: ICH - Admin
         - label: ICH - Android
         - label: ICH - iOS
