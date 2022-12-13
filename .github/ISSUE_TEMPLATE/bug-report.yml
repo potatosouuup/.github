@@ -12,9 +12,8 @@ body:
       description: ❗️REQUIRED
       options:
         - label: PRD
+        required: true
         - label: INT
-    validations:
-      required: true
 
   - type: checkboxes
     id: project-type
@@ -23,13 +22,12 @@ body:
       description: ❗️REQUIRED
       options:
         - label: ICH - Website
+        required: true
         - label: ICH - Admin
         - label: ICH - Android
         - label: ICH - iOS
         - label: SaaS Client - Website
         - label: SaaS Client - Admin
-    validations:
-      required: true
 
   - type: textarea
     attributes:
